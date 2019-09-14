@@ -2,7 +2,7 @@
 
 namespace PF2.Core
 {
-    interface IPfObject
+    public interface IPfObject
     {
         int Level { get; set; }
     }
