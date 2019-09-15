@@ -12,7 +12,7 @@ namespace PF2.Core.Rules
         Die Die { get; set; }
         int DifficultyClass { get; set; }
         Modifier[] Modifiers { get; set; }
-        string Outcome { get; set; } // critical success, success, failure, critical failure
+        IOutcome Outcome { get; set; } // critical success, success, failure, critical failure
         Penalty[] Penalties { get; set; }
 
     }

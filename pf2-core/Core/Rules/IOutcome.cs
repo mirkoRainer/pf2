@@ -1,6 +1,6 @@
 namespace PF2.Core.Rules
 {
-    public class AttackRoll
+    public class IOutcome
     {
     }
 }

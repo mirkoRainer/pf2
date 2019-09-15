@@ -16,15 +16,19 @@ namespace PF2.Tests
         }
 
         [Test]
-        public void UntrainedLevelFive_ReturnsFive()
+        [TestCase(Proficiency.Untrained, 5)]
+        [TestCase(Proficiency.Trained, 7)]
+        [TestCase(Proficiency.Expert, 9)]
+        [TestCase(Proficiency.Master, 11)]
+        [TestCase(Proficiency.Legendary, 13)]
+        public void ProficiencyAndLevel_ReturnsAppropriateBonus(Proficiency proficiency, int expectedBonus)
         {
             //arrange
             Setup();
             //act
-            proficiency = Proficiency.Untrained;
             ProficiencyBonus bonus = new ProficiencyBonus(level, proficiency);
             //assert
-            Assert.AreEqual(5, bonus.Amount);
+            Assert.AreEqual(expectedBonus, bonus.Amount);
         }
     }
 }
