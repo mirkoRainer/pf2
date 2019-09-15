@@ -7,6 +7,12 @@ namespace PF2.Tests
     [TestFixture]
     public class AttackTests
     {
-        
+        [SetUp]
+        public void Setup()
+        {
+            
+        }
+        [Test]
+        [TestCase()]
     }
 }
