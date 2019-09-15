@@ -7,3 +7,4 @@ namespace PF2.Core.Rules
         Status,
         Item
     }
+}

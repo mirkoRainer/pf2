@@ -1,7 +1,0 @@
-namespace PF2.Core.Rules
-{
-    public class Ability
-    {
-        //TODO
-    }
-}

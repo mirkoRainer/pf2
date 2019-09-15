@@ -5,14 +5,15 @@ using PF2.Core.Utility;
 namespace PF2.Tests
 {
     [TestFixture]
-    public class AttackTests
+    public class MeleeAttackRollTests
     {
         [SetUp]
         public void Setup()
         {
-            
+            int armorClass = 15;
+            int modifierBonus = 3;
         }
-        [Test]
-        [TestCase()]
+        // [Test]
+        // public void MeleeAttackWithUntrainedWeapon
     }
 }

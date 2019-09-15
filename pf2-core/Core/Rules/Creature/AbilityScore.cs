@@ -1,12 +1,14 @@
 namespace PF2.Core.Rules
 {
-    public enum AbilityScore
+    public class AbilityScore
     {
-        Strength,
-        Dexterity,
-        Consitution,
-        Intelligence,
-        Wisdom,
-        Charisma
+        public int Score { get; private set; }
+        public Ability Ability { get; private set; }
+        public AbilityScore(int score,
+                            Ability ability)
+        {
+            Score = score;
+            Ability = ability;
+        }
     }
 }

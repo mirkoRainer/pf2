@@ -1,6 +1,6 @@
 namespace PF2.Core.Rules
 {
-    internal interface IBonus
+    public interface IBonus
 {
         string Type { get; }
         int Amount { get; }
