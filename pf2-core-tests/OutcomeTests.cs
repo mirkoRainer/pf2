@@ -6,32 +6,32 @@ namespace PF2.Tests
     [TestFixture]
     public class OutcomeTests
     {
+        int difficultyClass;
         [SetUp]
         public void Setup()
         {
-            int difficultyClass = 14;
+            difficultyClass = 14;
         }
         [Test]
-        [TestCase(24, 2, "Critical Success")]
+        [TestCase(24, 20, Result="Critical Success")] // a 20 on the die increases the degree of success/failure by one
         [TestCase(25, 10, "Critical Success")]
         [TestCase(25, 1, "Success")] // a 1 on the die lessens the degree of success/failure by one
-        public void Check_Result_More_Than_Ten_Over_DC(int checkTotal, int dieValue, string outcome)
+        [TestCase(18, 20, "Critical Success")]
+        [TestCase(14, 10, "Success")]
+        [TestCase(15, 10, "Success")]
+        [TestCase(15, 1, "Failure")]
+        [TestCase(13, 20, "Success")]
+        [TestCase(13, 10, "Failure")]
+        [TestCase(12, 1, "Critical Failure")]
+        [TestCase(4, 20, "Failure")]
+        [TestCase(4, 10, "Critical Failure")]
+        [TestCase(3, 10, "Critical Failure")]
+        [TestCase(4, 1, "Critical Failure")]
+        public void Check_Result_Yields_Appropriate_Outcome(int checkTotal, int dieValue, string expectedOutcome)
         {
-            CheckOutcome testOutcome = new CheckOutcome();
-        }
-        [Test]
-        public void Check_Result_At_Or_Over_DC()
-        {
-
-        }
-        [Test]
-        public void Check_Result_Under_DC()
-        {
-
-        }
-        public void Check_Result_Under_DC_By_Ten_Or_More()
-        {
-
+            CheckOutcome outcome = new CheckOutcome(difficultyClass, checkTotal, dieValue);
+            string outcomeReport = outcome.RetrieveOutcomeReport();
+            Assert.AreSame(outcomeReport, expectedOutcome);
         }
     }
 }

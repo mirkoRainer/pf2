@@ -1,16 +1,35 @@
+using System;
+
 namespace PF2.Core.Rules
 {
     public class CheckOutcome
     {
-        int difficultyClass { get; set; }
-        int checkTotal { get; set; }
-        int dieValue { get; set; }
-        bool isCritical { get; set; }
-        bool isSuccess { get; set; }
-        public CheckOutcome(int dc, int checkTotal, int dieValue)
+        int difficultyClass;
+        int checkTotal;
+        int dieValue;
+        bool isCritical;
+        bool isSuccess;
+        int criticalThreshold = 10;
+
+        public CheckOutcome(int dc, int total, int dieRoll)
         {
-            checkResult = result;
-            
+            checkTotal = total;
+            difficultyClass = dc;
+            dieValue = dieRoll;
+            isCritical = false;
+            isSuccess = false;
+            DetermineOutcome();
+        }
+
+        private void DetermineOutcome()
+        {
+            int checkDCDifference = checkTotal - difficultyClass;
+
+        }
+
+        public string RetrieveOutcomeReport()
+        {
+            return "";
         }
     }
 }
