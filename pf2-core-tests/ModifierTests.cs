@@ -35,7 +35,7 @@ namespace PF2.Tests
         public void AbilityScores_HaveAppropriateModifier(int score, int expectedModifier)
         {
             AbilityScore abilityScore = new AbilityScore(score, Ability.Strength);
-            Modifier modifier = new Modifier(abilityScore);
+            AbilityModifier modifier = new AbilityModifier(abilityScore);
             Assert.AreEqual(modifier.Amount, expectedModifier);
         }
     }

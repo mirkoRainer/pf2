@@ -1,5 +1,4 @@
 using NUnit.Framework;
-using PF2.Core;
 using PF2.Core.Utility;
 
 namespace PF2.Tests

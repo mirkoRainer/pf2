@@ -13,7 +13,7 @@ namespace PF2.Tests
             difficultyClass = 14;
         }
         [Test]
-        [TestCase(24, 20, Result="Critical Success")] // a 20 on the die increases the degree of success/failure by one
+        [TestCase(24, 20, "Critical Success")] // a 20 on the die increases the degree of success/failure by one
         [TestCase(25, 10, "Critical Success")]
         [TestCase(25, 1, "Success")] // a 1 on the die lessens the degree of success/failure by one
         [TestCase(18, 20, "Critical Success")]
@@ -31,7 +31,7 @@ namespace PF2.Tests
         {
             CheckOutcome outcome = new CheckOutcome(difficultyClass, checkTotal, dieValue);
             string outcomeReport = outcome.RetrieveOutcomeReport();
-            Assert.AreSame(outcomeReport, expectedOutcome);
+            Assert.That(outcomeReport, Is.EqualTo(expectedOutcome));
         }
     }
 }
