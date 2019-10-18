@@ -1,53 +1,46 @@
 ﻿using System;
-using NUnit.Framework;
+
 using PF2.Core;
 using PF2.Core.Utility;
-namespace PF2.Core.Rules { 
+namespace PF2.Core.Rules {
 
-public struct PC 
-{
-    // PC data
-    // Basic info.
-    public string Player_Name;
-    public string PC_Name;
-    public string Player_Class;
-    public int level;
-    // abliity scores and mods
-    public int STR_Score;
-    public int STR_Mod;
-    public int Dex_Score;
-    public int DEX_Mod;
-    public int Con_Score;
-    public int Con_Mod;
-    public int Int_Score;
-    public int Int_Mod;
-    public int Wis_Score;
-    public int Wis_mod;
-    public int Con_Score;
-    public int Con_mod;
-    // Defensive scores
-    public int Armor_Class;
-    public int Will_Save;
-    public int Reflex_save;
-    public int Fort_Save;
-    // Offensive scores
-    public int Weapon_Strike;
-    public int Weapon_damage;
-    public int Spell_DC;
-}
+    public class PC
+    { 
 
-class Player {
+        // PC data
+        // Basic info.
+        public string PlayerName;
+        public string PCName;
+        public string PlayerClass;
+        public int level;
+        // abliity scores and mods
+        public AbilityScore Strength;
+        public AbilityScore Dexterity;
+        public AbilityScore Constitution;
+        public AbilityScore Intellgence;
+        public AbilityScore Wisdom;
+        public AbilityScore Charisma;
 
-    static void Main(string[] args)
+        // Defensive scores
+        public int Armor_Class;
+        public class WillSave
         {
-            PC testPlayer;
-    
-        testPlayer.PC_Name = "Yanna";
-        testPlayer.Player_Class = "Fighter";
-        testPlayer.level = 2;
 
-
-        Console.WriteLine(testPlayer.Name + "is a level " + testPlayer.level + " " + testPlayer.level);
         }
-}                   
+        public class FortitudeSave
+        {
+
+        }
+        public class ReflexSave
+        {
+
+        }
+        // Offensive scores
+        public int Weapon_Strike;
+        public int Weapon_damage;
+        public int Spell_DC;
+    }
+
+   
 }
+
