@@ -1,5 +1,3 @@
-
-
 namespace PF2.Core
 {
     public interface IPfObject

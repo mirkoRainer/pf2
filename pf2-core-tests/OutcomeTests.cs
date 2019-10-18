@@ -6,12 +6,14 @@ namespace PF2.Tests
     [TestFixture]
     public class OutcomeTests
     {
-        int difficultyClass;
+        private int difficultyClass;
+
         [SetUp]
         public void Setup()
         {
             difficultyClass = 14;
         }
+
         [Test]
         [TestCase(24, 20, "Critical Success")] // a 20 on the die increases the degree of success/failure by one
         [TestCase(25, 10, "Critical Success")]
@@ -27,7 +29,7 @@ namespace PF2.Tests
         [TestCase(4, 10, "Critical Failure")]
         [TestCase(3, 10, "Critical Failure")]
         [TestCase(4, 1, "Critical Failure")]
-        public void Check_Result_Yields_Appropriate_Outcome(int checkTotal, int dieValue, string expectedOutcome)
+        public void CheckResultYieldsAppropriateOutcome(int checkTotal, int dieValue, string expectedOutcome)
         {
             CheckOutcome outcome = new CheckOutcome(difficultyClass, checkTotal, dieValue);
             string outcomeReport = outcome.RetrieveOutcomeReport();

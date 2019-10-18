@@ -4,10 +4,11 @@ namespace PF2.Core.Rules
     {
         public int Amount { get; }
         public string Type { get; }
-        public ProficiencyBonus (int level, Proficiency proficiency)
+
+        public ProficiencyBonus(int level, Proficiency proficiency)
         {
             Type = Bonustype.Proficiency.ToString("g");
-            Amount = level + (int) proficiency;
+            Amount = level + (int)proficiency;
         }
     }
 }

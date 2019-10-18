@@ -1,6 +1,6 @@
 namespace PF2.Core.Rules
 {
-    public enum Trait 
+    public enum Trait
     {
         Aberration,
         Abjuration,

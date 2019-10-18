@@ -9,9 +9,9 @@ namespace PF2.Core.Rules
         // 3. compare result to DC
         // 4. determine degree of success/failure
         IBonus[] Bonuses { get; set; }
+
         Die Die { set; }
         AbilityModifier Modifier { get; set; }
         IPenalty[] Penalties { get; set; }
-
     }
 }

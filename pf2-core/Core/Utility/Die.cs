@@ -6,15 +6,15 @@ namespace PF2.Core.Utility
     {
         public int NumberOfSides { get; private set; }
 
-        public Die( int maxValue ) 
+        public Die(int maxValue)
         {
             NumberOfSides = maxValue;
         }
-            
-        public int Roll() 
+
+        public int Roll()
         {
             Random rand = new Random();
-            return rand.Next( 1, NumberOfSides );
+            return rand.Next(1, NumberOfSides);
         }
     }
 }

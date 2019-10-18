@@ -1,6 +1,6 @@
 namespace PF2.Core.Rules
 {
-    public enum Bonustype 
+    public enum Bonustype
     {
         Proficiency,
         Circumstance,

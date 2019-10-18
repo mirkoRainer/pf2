@@ -1,8 +1,8 @@
 namespace PF2.Core.Rules
 {
-    public  interface IPenalty
+    public interface IPenalty
     {
         string Type { get; set; }
-        int Amount{ get; set; }
+        int Amount { get; set; }
     }
 }

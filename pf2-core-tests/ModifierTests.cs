@@ -1,6 +1,5 @@
 using NUnit.Framework;
 using PF2.Core.Rules;
-using PF2.Core.Utility;
 
 namespace PF2.Tests
 {
@@ -11,6 +10,7 @@ namespace PF2.Tests
         public void Setup()
         {
         }
+
         [Test]
         [TestCase(1, -5)]
         [TestCase(2, -4)]

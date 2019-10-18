@@ -6,6 +6,7 @@ namespace PF2.Core.Rules
     {
         public Ability Type { get; private set; }
         public int Amount { get; private set; }
+
         public AbilityModifier(AbilityScore abilityScore)
         {
             Type = abilityScore.Ability;

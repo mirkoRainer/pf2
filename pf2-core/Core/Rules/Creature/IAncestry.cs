@@ -14,5 +14,5 @@ namespace PF2.Core.Rules
         Ability[] SpecialAbilities { get; set; }
         Heritage Heritage { get; set; }
         IBackground Background { get; set; }
-    }   
+    }
 }

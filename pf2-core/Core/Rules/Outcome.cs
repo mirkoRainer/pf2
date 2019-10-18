@@ -1,16 +1,13 @@
-using System;
-using System.Text;
-
 namespace PF2.Core.Rules
 {
     public class CheckOutcome
     {
-        int difficultyClass;
-        int checkTotal;
-        int numberOnDie;
-        bool isCritical;
-        bool isSuccess;
-        int criticalThreshold;
+        private int difficultyClass;
+        private int checkTotal;
+        private int numberOnDie;
+        private bool isCritical;
+        private bool isSuccess;
+        private int criticalThreshold;
 
         public CheckOutcome(int difficultyClass, int checkTotal, int dieRoll, int criticalThreshold = 10)
         {
@@ -41,6 +38,7 @@ namespace PF2.Core.Rules
             if (numberOnDie == 1) DowngradeResult();
             if (numberOnDie == 20) UpgradeResult();
         }
+
         private void UpgradeResult()
         {
             if (isSuccess && isCritical) return;
@@ -52,7 +50,7 @@ namespace PF2.Core.Rules
         private void DowngradeResult()
         {
             if (isSuccess && isCritical)
-            { 
+            {
                 isCritical = false;
                 return;
             }
@@ -71,7 +69,6 @@ namespace PF2.Core.Rules
                 return;
             }
         }
-
 
         public string RetrieveOutcomeReport()
         {

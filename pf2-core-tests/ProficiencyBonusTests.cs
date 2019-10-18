@@ -1,4 +1,3 @@
-
 using NUnit.Framework;
 using PF2.Core.Rules;
 
@@ -6,11 +5,11 @@ namespace PF2.Tests
 {
     public class ProficiencyBonusTests
     {
-        int level;
-        Proficiency proficiency;
+        private int level;
+        private Proficiency proficiency;
 
         [SetUp]
-        public void Setup() 
+        public void Setup()
         {
             level = 5;
         }
