@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using PF2.Core.Utility;
 
-namespace PF2.Tests
+namespace PF2.Tests.Utility
 {
     public class DieTests
     {
