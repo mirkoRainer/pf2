@@ -2,6 +2,8 @@
 
 This is an ambitious attempt to take the rules from [Pathfinder Second Edition](https://paizo.com/pathfinder) and put them to code within a C#/.NET Library to then be packaged and available for consumption in other projects.
 
+To make this as collaborative as possible, please create a branch with your name to work on and submit a PR with approval to `master` when your changes are complete.
+
 ## Coding Guidelines
 
 ### DDD ([Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design))
