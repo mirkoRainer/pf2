@@ -1,7 +1,8 @@
+using PF2.Core.Rules.Creature;
 using PF2.Core.Utility;
 using System.Collections.Generic;
 
-namespace PF2.Core.Rules
+namespace PF2.Core.Rules.Combat
 {
     // Core Rulebook pg12
     public class MeleeAttack : ICheck
