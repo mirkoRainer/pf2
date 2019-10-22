@@ -1,6 +1,6 @@
-namespace PF2.Core.Rules
+namespace PF2.Core.Rules.Creature
 {
-    public enum CreatureSize
+    public enum Size
     {
         Tiny,
         Small,
