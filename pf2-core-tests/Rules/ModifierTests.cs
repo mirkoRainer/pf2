@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using PF2.Core.Rules;
 
-namespace PF2.Tests
+namespace PF2.Tests.Rules
 {
     [TestFixture]
     public class ModifierTests

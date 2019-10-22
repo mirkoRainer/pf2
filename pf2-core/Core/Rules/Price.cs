@@ -1,0 +1,34 @@
+namespace PF2.Core.Rules
+{
+    public class Price
+    {
+        int Copper;
+        int Silver;
+        int Gold;
+        int Platinum;
+
+        public Price(int copper, int silver, int gold, int platinum) 
+        {
+            Copper = copper;
+            Silver = silver;
+            Gold = gold;
+            Platinum = platinum;
+        }
+
+        //This function assumes that each price is only going to be in terms of a single unit of currency
+        //smartypan 10/21/19
+        public string GetDisplayPrice() {
+            if (Platinum > 0) {
+                return Platinum.ToString() + " pp";    
+            } else if (Gold > 0) {
+                return Gold.ToString() + " gp";
+            } else if (Silver > 0) {
+                return Silver.ToString() + " sp";
+            } else if (Copper > 0) {
+                return Copper.ToString() + " cp";
+            } else {
+                return "Free";
+            }
+        }
+    }
+}
