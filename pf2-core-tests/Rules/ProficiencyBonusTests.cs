@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using PF2.Core.Rules;
 
-namespace PF2.Tests
+namespace PF2.Tests.Rules
 {
     public class ProficiencyBonusTests
     {
@@ -15,7 +15,7 @@ namespace PF2.Tests
         }
 
         [Test]
-        [TestCase(Proficiency.Untrained, 5)]
+        [TestCase(Proficiency.Untrained, 0)]
         [TestCase(Proficiency.Trained, 7)]
         [TestCase(Proficiency.Expert, 9)]
         [TestCase(Proficiency.Master, 11)]
