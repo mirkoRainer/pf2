@@ -9,7 +9,7 @@ namespace PF2.Core.Rules
         int Speed { get; set; }
         AbilityScore[] AbilityBoosts { get; set; }
         AbilityScore[] AbilityFlaws { get; set; }
-        List<Language> Languages { get; set; }
+        List<Languages> Languages { get; set; }
         Trait[] Traits { get; set; }
         Ability[] SpecialAbilities { get; set; }
         Heritage Heritage { get; set; }

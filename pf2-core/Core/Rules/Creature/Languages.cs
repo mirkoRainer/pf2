@@ -1,6 +1,6 @@
 namespace PF2.Core.Rules
 {
-    public enum Language
+    public enum Languages
     {
         Abyssal,
         Aklo,
