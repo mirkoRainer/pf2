@@ -1,4 +1,4 @@
-namespace PF2.Core.Rules.Combat
+namespace PF2.Core.Rules.Encounters
 {
     public class ActionCost
     {

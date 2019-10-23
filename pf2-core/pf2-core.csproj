@@ -7,6 +7,9 @@
 
   <ItemGroup>
     <Folder Include="Core\Rules\Creature\Monster\" />
-    <Folder Include="Core\Rules\Creature\PlayerCharacter\NonPlayerCharacter\" />
+    <Folder Include="Core\Rules\Creature\Monster\NonPlayerCharacter\" />
+    <Folder Include="Core\Rules\Encounters\Social\" />
+    <Folder Include="Core\Rules\Downtime\" />
+    <Folder Include="Core\Rules\Exploration\" />
   </ItemGroup>
 </Project>
