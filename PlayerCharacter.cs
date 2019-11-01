@@ -22,7 +22,10 @@ namespace PF2.Core.Rules {
         public AbilityScore Charisma;
 
         // Defensive scores
-        public int Armor_Class;
+        public class Armor_Class
+        {
+
+        }
         public class WillSave
         {
 
@@ -36,10 +39,19 @@ namespace PF2.Core.Rules {
 
         }
         // Offensive scores
-        public int Weapon_Strike;
-        public int Weapon_damage;
-        public int Spell_DC;
-    }
+        public class Weapon_Strike
+        {
+
+        }
+        public class Weapon_damage
+        {
+
+        }
+        public class Spell_DC
+        {
+
+        }
+    
 
    
 }
