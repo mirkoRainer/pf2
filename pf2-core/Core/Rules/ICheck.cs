@@ -1,3 +1,4 @@
+using PF2.Core.Rules.Creature;
 using PF2.Core.Utility;
 
 namespace PF2.Core.Rules

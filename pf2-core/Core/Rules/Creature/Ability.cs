@@ -1,4 +1,4 @@
-namespace PF2.Core.Rules
+namespace PF2.Core.Rules.Creature
 {
     public enum Ability
     {

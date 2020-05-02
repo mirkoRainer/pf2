@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 
-namespace PF2.Core.Rules
+namespace PF2.Core.Rules.Creature.PlayerCharacter
 {
     public interface IAncestry
     {
         int HitPoints { get; set; }
-        CreatureSize Size { get; set; }
+        Size Size { get; set; }
         int Speed { get; set; }
         AbilityScore[] AbilityBoosts { get; set; }
         AbilityScore[] AbilityFlaws { get; set; }
